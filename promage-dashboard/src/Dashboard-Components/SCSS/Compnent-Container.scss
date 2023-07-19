@@ -7,8 +7,11 @@ body{
 
 // **************** MOBILE VIEW
 
-.component-container{
-  height: 100vh;
-  background-color: #EBDFD7;
-  padding: 20px;
+@media (min-width: 360px) {
+  .component-container{
+    height: 100vh;
+    background-color: #EBDFD7;
+    padding: 20px;
+  }
 }
+

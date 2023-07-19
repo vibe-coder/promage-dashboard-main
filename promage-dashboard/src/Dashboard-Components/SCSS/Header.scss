@@ -1,4 +1,84 @@
-.header-container{
-  background-color: white;
-  padding: 10px;
+
+// ************* Mobile View
+
+
+@media (min-width: 360px){
+  .header-container{
+    
+    .dashboard{
+      font-size: 2rem;
+      margin: 0;
+    }
+
+    .user-wrapper{
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+
+      .search-input{
+        height: 40px;
+        border: none;
+        border-radius: 20px;
+        text-indent: 20px;
+        margin-bottom: 20px;
+      }
+
+      .wrapper{
+        display:flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+    
+
+        .circle{
+          background-color: rgb(255, 255, 255);
+          width: 40px;
+          height: 40px;
+          border-radius: 20px;
+          color: #fff;
+        }
+  
+        .bio-wrapper{
+          background-color: rgba(255, 255, 255, .6);
+          display: flex;
+          height: 40%;
+          width: 200px;
+          border-radius: 40px;
+          align-items: center;
+          padding: 10px;
+          // justify-content: space-between;
+  
+          .picture{
+            background-color: red;
+            height: 40px;
+            width: 40px;
+            border-radius: 20px;
+            margin-right: 10px;
+          }
+  
+          .name{
+            margin-right: 20px;
+            h3,p{
+              margin: 0;
+            }
+            h3{
+              font-size: 1rem;
+              margin-bottom: 3px;
+            }
+            p{
+              font-size: .7rem;
+            }
+          }
+  
+          .arrow{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            // background-color: red;
+            width: 30px;
+          }
+        }
+      }
+    }
+  }
 }
