@@ -1,9 +1,42 @@
 @media (min-width: 360px) {
   .overview-container{
     background-color: rgba(255, 255, 255, .6);
-    height: 500px;
     border: none;
     border-radius: 30px;
-    padding: 20px;
+    padding: 40px;
+
+    .income-icon{
+      margin-bottom: 30px;
+    }
+
+    .income-figure{
+      p{
+        font-weight: 400;
+        color: #797979;
+        margin: 0;
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+      }
+
+      h1{
+        font-size: 2.6rem;
+        margin: 0;
+        color: #060606;
+      }
+
+      .increase-wrapper{
+        display: flex;
+        gap: 5px;
+        margin-top: 20px;
+        align-items: center;
+
+        p{
+          margin: 0;
+          font-weight: 400;
+          font-size: 1rem;
+          color: #060606;
+        }
+      }
+    }
   }
 }
