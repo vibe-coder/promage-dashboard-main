@@ -8,7 +8,7 @@ body{
 @media (min-width: 360px) {
 
   .overview-container{
-    margin: 0;
+    margin-bottom: 50px;
     .overview-header{
       display: flex;
       align-items: center;
@@ -46,8 +46,9 @@ body{
         background-color: rgba(255, 255, 255, .5);
         border: none;
         border-radius: 20px;
-        padding: 15px;
+        padding: 10px;
         width: 150px;
+        flex-grow: 1;
     
         .icon-1{
           margin-bottom: 30px;
@@ -63,9 +64,10 @@ body{
           }
     
           h1{
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin: 0;
             color: #060606;
+            line-height: 20px;
   
             .calculate{
               font-size: 1rem;
@@ -88,6 +90,10 @@ body{
             }
           }
         }
+      }
+
+      .container:last-child{
+        flex-grow: 1;
       }
     }
   }
