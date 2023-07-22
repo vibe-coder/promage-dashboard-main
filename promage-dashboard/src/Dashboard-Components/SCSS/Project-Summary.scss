@@ -1,30 +1,98 @@
 @media (min-width: 368px) {
   .project-summary-container{
-    background-color: red;
 
     .summary-wrapper{
+      height: 30vh;
+      background-color: rgba(237, 0, 0, 0.6);
+      border-radius: 20px;
+      padding: 20px;
+      
+  
 
-      .summary-header{
-        background-color: yellow;
+
+      // ******************************* Project Caution Wrapper
+
+      .caution-wrapper{
         display: flex;
-        justify-content: space-between;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: flex-end;
 
-        h3{
-          font-size: 1rem;
-          font-weight: 600;
+        img{
+          height: 17px;
+          mix-blend-mode: multiply;
         }
 
-        .button-wrapper{
+        p{
+          margin: 0;
+          font-size: .8rem;
+        }
+      }
 
-          .selection{
-            background-color: rgb(255, 255, 255);
-            padding: 5px;
 
-            p{
-              margin: 0;
+      // ******************************** Scroll Side-ways
+
+
+      .scroll-x{
+        background-color: green;
+        overflow: scroll;
+
+        .summary-header{
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          overflow-x: scroll;
+          gap: 28%;
+          margin-bottom: 20px;
+          background-color: blue;
+          width: 200vw;
+  
+          .title-wrapper{
+            background-color: yellow;
+      
+            
+            h3{
+              font-size: 1rem;
+              font-weight: 600;
+              width: 130px;
+            }
+          }
+  
+          .button-wrapper{
+            display: flex;
+            overflow: hidden;
+            gap: 20px;
+  
+            .selection{
+              background-color: rgb(255, 255, 255);
+              padding: 10px 17px;
+              display: flex;
+              gap: 15px;
+              border-radius: 20px;
+  
+              p{
+                margin: 0;
+              }
             }
           }
         }
+  
+  
+        // ********************************** Project Summary Body
+  
+        .summary-body{
+          background-color: red;
+          overflow: hidden;
+  
+          table{
+            width: 100%;
+            .header{
+              background-color: grey;
+            }
+          }
+        }
+
       }
     }
   }
