@@ -3,7 +3,7 @@
 
     .summary-wrapper{
       height: 30vh;
-      background-color: rgba(237, 0, 0, 0.6);
+      background-color: rgba(255, 255, 255, .5);
       border-radius: 20px;
       padding: 20px;
       
@@ -35,7 +35,7 @@
 
 
       .scroll-x{
-        background-color: green;
+        // background-color: green;
         overflow: scroll;
 
         .summary-header{
@@ -43,19 +43,25 @@
           justify-content: space-between;
           align-items: center;
           overflow-x: scroll;
-          gap: 28%;
           margin-bottom: 20px;
-          background-color: blue;
           width: 200vw;
+          // border: solid 1px rgb(179, 179, 179);
+          border-radius: 30px;
+          // padding: 0 5px;
+          height: 50px;
   
           .title-wrapper{
-            background-color: yellow;
+            // background-color: rgb(255, 255, 255);
+            // padding: 10px 17px;
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+
       
-            
             h3{
               font-size: 1rem;
               font-weight: 600;
-              width: 130px;
+              margin: 0;
             }
           }
   
@@ -63,6 +69,7 @@
             display: flex;
             overflow: hidden;
             gap: 20px;
+            align-items: center;
   
             .selection{
               background-color: rgb(255, 255, 255);
@@ -82,14 +89,58 @@
         // ********************************** Project Summary Body
   
         .summary-body{
-          background-color: red;
+          // background-color: red;
           overflow: hidden;
+          // background-color: green;
+          width: 200vw;
+          height: 200px;
   
-          table{
-            width: 100%;
-            .header{
-              background-color: grey;
+          .table{
+            width: 200vw;
+            border-collapse: collapse;
+            // background-color: red;
+
+
+            // *********************************** Table Header
+
+            .table-header-wrapper{
+              text-align: left;
+              font-weight: 300;
+              border-bottom: solid 1px rgb(179, 179, 179);
             }
+
+            .table-header-wrapper{
+              border-collapse: collapse;
+              .header{
+                border-collapse: collapse;
+
+                .header-item{
+                  height: 30px;
+                  border-collapse: collapse;
+
+                  p{
+                    margin: 0;
+                  }
+                }
+
+                .header-item:last-child{
+                  text-align: right;
+                }
+              }
+            }
+
+
+            // ************************************* Table Body
+
+            .table-body-wrapper{
+              // background-color: green;
+
+              .body{
+                padding: 20px 0;
+              }
+            }
+
+
           }
         }
 
