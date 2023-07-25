@@ -9,7 +9,6 @@ function ProjectSummary() {
     <div className='project-summary-container'>
 
       <div className='summary-wrapper'>
-
         {/* Caution Header */}
 
         <div className='caution-wrapper'>
@@ -18,7 +17,7 @@ function ProjectSummary() {
         </div>
 
 
-        {/* Scroll Side-ways */}
+        {/* Project Summary Selection */}
 
         <div className='scroll-x'>
 
@@ -32,12 +31,12 @@ function ProjectSummary() {
               </div>
 
               <div className='selection'>
-                <p>Project</p>
+                <p>Project Manager</p>
                 <img src={arrowDown} alt="Arrow Down Icon"/>
               </div>
 
               <div className='selection'>
-                <p>Project</p>
+                <p>Status</p>
                 <img src={arrowDown} alt="Arrow Down Icon"/>
               </div>
             </div>
@@ -62,19 +61,48 @@ function ProjectSummary() {
               </thead>
 
               <tbody className='table-body-wrapper'>
-                <tr className='body'>
-                  <td className='body-item'>Nelsa Web Development</td>
-                  <td className='body-item'>Om prakash sao</td>
-                  <td className='body-item'>May 25, 2023</td>
-                  <td className='body-item'>Completed</td>
-                  <td className='body-item'>100%</td>
+                <tr className='row-body'>
+                  <td className='body-item'><p>Nelsa Web Development</p></td>
+                  <td className='body-item'><p>Om prakash sao</p></td>
+                  <td className='body-item'><p>May 25, 2023</p></td>
+                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
+                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
                 </tr>
-              </tbody>
-              
+
+                <tr className='row-body'>
+                  <td className='body-item'><p>Nelsa Web Development</p></td>
+                  <td className='body-item'><p>Om prakash sao</p></td>
+                  <td className='body-item'><p>May 25, 2023</p></td>
+                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
+                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                </tr>
+
+                <tr className='row-body'>
+                  <td className='body-item'><p>Nelsa Web Development</p></td>
+                  <td className='body-item'><p>Om prakash sao</p></td>
+                  <td className='body-item'><p>May 25, 2023</p></td>
+                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
+                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                </tr>
+
+              </tbody> 
             </table>
           </div>
         </div>
       </div>
+
+
+
+      {/* Overall Progress */}
+
+      <div className='overall-progress-container'>
+        Hey
+      </div>
+
+
+
+
+
     </div>
   )
 }

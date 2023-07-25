@@ -2,13 +2,11 @@
   .project-summary-container{
 
     .summary-wrapper{
-      height: 30vh;
       background-color: rgba(255, 255, 255, .5);
       border-radius: 20px;
       padding: 20px;
+      // background-color: orange;
       
-  
-
 
       // ******************************* Project Caution Wrapper
 
@@ -31,7 +29,7 @@
       }
 
 
-      // ******************************** Scroll Side-ways
+      // ******************************** Project Summary Selection
 
 
       .scroll-x{
@@ -42,7 +40,6 @@
           display: flex;
           justify-content: space-between;
           align-items: center;
-          overflow-x: scroll;
           margin-bottom: 20px;
           width: 200vw;
           // border: solid 1px rgb(179, 179, 179);
@@ -59,7 +56,7 @@
 
       
             h3{
-              font-size: 1rem;
+              font-size: 1.2rem;
               font-weight: 600;
               margin: 0;
             }
@@ -89,35 +86,33 @@
         // ********************************** Project Summary Body
   
         .summary-body{
-          // background-color: red;
           overflow: hidden;
-          // background-color: green;
           width: 200vw;
-          height: 200px;
-  
+          // background-color: blue;
+          
           .table{
             width: 200vw;
             border-collapse: collapse;
-            // background-color: red;
+            border-spacing: 0;
+            // background-color: purple;
 
 
             // *********************************** Table Header
 
-            .table-header-wrapper{
+            // .table-header-wrapper{
+            //   text-align: left;
+            //   font-weight: 300;
+            //   border-bottom: solid 1px rgb(179, 179, 179);
+            // }
+
+            .table-header-wrapper{ 
               text-align: left;
               font-weight: 300;
-              border-bottom: solid 1px rgb(179, 179, 179);
-            }
-
-            .table-header-wrapper{
-              border-collapse: collapse;
+              border-bottom: solid 1px rgb(179, 179, 179);   
+              // background-color: green;          
               .header{
-                border-collapse: collapse;
-
                 .header-item{
                   height: 30px;
-                  border-collapse: collapse;
-
                   p{
                     margin: 0;
                   }
@@ -133,17 +128,43 @@
             // ************************************* Table Body
 
             .table-body-wrapper{
-              // background-color: green;
+              // border: solid;
 
-              .body{
-                padding: 20px 0;
+              .row-body{
+                // background-color: red;
+                
+                .body-item:last-child{
+                  text-align: right;
+                }
+
+                .body-item{
+                  height: 50px;
+                  border-bottom: solid .1rem transparent;
+                  // border-top: solid .08rem red;
+                }
+
+                .body-item:nth-child(4) .status-bar{
+                  background-color: rgba($color: #1A932E, $alpha: .1);
+                  height: 60%;
+                  width: 90%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  border-radius: 40px;
+                  color: #1A932E;
+                }
+              }
+
+              .row-body:nth-child(1){
+                // border-top: solid 1px transparent;
               }
             }
-
-
           }
         }
+      }
 
+      .scroll-x::-webkit-scrollbar{
+        display: none;
       }
     }
   }
