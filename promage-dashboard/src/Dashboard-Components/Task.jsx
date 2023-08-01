@@ -70,13 +70,71 @@ function Task() {
 
       {/* Projects Workload */}
 
-      <div className="projects-workload-wrapper">
-        <div className="projects-workload-header">
+      <div className="project-workload-wrapper">
+
+        {/* Projects Workload Header */}
+
+        <div className="project-workload-header">
           <h3>Projects Workload</h3>
           <div>
             Last 3 Months 
             <img src={arrowDown} alt="Arrow Down Icon"/>
           </div>
+        </div>
+
+        {/* Projects Worload Body */}
+
+        <div className='project-workload-body'>
+
+          <div className='user'>
+            <div className='figure'>1</div>
+            <div className='figure'>2</div>
+            <div className='figure'>3</div>
+            <h4>Sam</h4>
+          </div>
+
+          <div className='user'>
+            <div className='figure'>1</div>
+            <div className='figure'>2</div>
+            <div className='figure'>3</div>
+            <div className='figure'>4</div>
+            <h4>Meldy</h4>
+          </div>
+
+          <div className='user'>
+            <div className='figure'>1</div>
+            <h4>Ken</h4>
+          </div>
+
+          <div className='user'>
+            <div className='figure'>1</div>
+            <div className='figure'>2</div>
+            <div className='figure'>3</div>
+            <div className='figure'>4</div>
+            <div className='figure'>5</div>
+            <div className='figure'>6</div>
+            <h4>Dmitry</h4>
+          </div>
+
+          <div className='user'>
+            <div className='figure'>1</div>
+            <div className='figure'>2</div>
+            <div className='figure'>3</div>
+            <div className='figure'>4</div>
+            <h4>Vego</h4>
+          </div>
+
+          <div className='user'>
+            <div className='figure'>1</div>
+            <h4>Kadin</h4>
+          </div>
+
+          <div className='user'>
+            <div className='figure'>1</div>
+            <div className='figure'>2</div>
+            <h4>Melm</h4>
+          </div>
+
         </div>
       </div>
 

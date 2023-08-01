@@ -1,6 +1,7 @@
 import React from 'react'
 import "./SCSS/Header.scss"
 import user from "../Images/ME.jpg"
+import arrowDown from "../Images/arrow-down.svg"
 
 
 function Header() {
@@ -21,7 +22,7 @@ function Header() {
           </div>
 
           <div className='arrow'>
-            .
+            <img src={arrowDown} alt="Arrow Down Icon"/>
           </div>
         </div>
       </div>
