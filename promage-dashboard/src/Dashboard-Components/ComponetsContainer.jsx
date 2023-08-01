@@ -3,6 +3,7 @@ import "./SCSS/Compnent-Container.scss"
 import Header from './Header'
 import Overview from './Overview'
 import ProjectSummary from './ProjectSummary'
+import Task from './Task'
 
 function ComponetsContainer() {
   return (
@@ -10,6 +11,7 @@ function ComponetsContainer() {
       <Header/>
       <Overview/>
       <ProjectSummary/>
+      <Task/>
     </div>
   )
 }

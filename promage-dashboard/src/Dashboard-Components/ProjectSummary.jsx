@@ -1,19 +1,22 @@
 import React from 'react'
 import "./SCSS/Project-Summary.scss"
 import arrowDown from "../Images/arrow-down.svg"
-import caution from "../Images/caution.gif"
 import arrowRight from "../Images/arrow-right-left.gif"
+import progressMeasure from "../Images/progress-measure.svg"
 
 function ProjectSummary() {
   return (
     <div className='project-summary-container'>
+
+
+      {/* Project Summary */}
 
       <div className='summary-wrapper'>
         {/* Caution Header */}
 
         <div className='caution-wrapper'>
           <img src={arrowRight} alt='caution' />
-          <p>Scroll right for more info.</p>
+          <p>Scroll right for more info</p>
         </div>
 
 
@@ -85,6 +88,22 @@ function ProjectSummary() {
                   <td className='body-item'><div className='progress-wrapper'>100%</div></td>
                 </tr>
 
+                <tr className='row-body'>
+                  <td className='body-item'><p>Nelsa Web Development</p></td>
+                  <td className='body-item'><p>Om prakash sao</p></td>
+                  <td className='body-item'><p>May 25, 2023</p></td>
+                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
+                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                </tr>
+
+                <tr className='row-body'>
+                  <td className='body-item'><p>Nelsa Web Development</p></td>
+                  <td className='body-item'><p>Om prakash sao</p></td>
+                  <td className='body-item'><p>May 25, 2023</p></td>
+                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
+                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                </tr>
+
               </tbody> 
             </table>
           </div>
@@ -96,11 +115,44 @@ function ProjectSummary() {
       {/* Overall Progress */}
 
       <div className='overall-progress-container'>
-        Hey
+
+        {/* Top */}
+        <div className='top'>
+          <h3>Overall Progress</h3>
+          <div>
+            <p>All</p>
+            <img src={arrowDown} alt='arrow down' />
+          </div>
+        </div>
+
+        {/* Middle */}
+        <div className='middle'>
+          <img src={progressMeasure} alt='progress measure' />
+        </div>
+
+        {/* Bottom */}
+        <div className='bottom'>
+          <div>
+            <h3>95</h3>
+            <p>Total Projects</p>
+          </div>
+
+          <div>
+            <h3>26</h3>
+            <p>Completed</p>
+          </div>
+
+          <div>
+            <h3>35</h3>
+            <p>Delayed</p>
+          </div>
+
+          <div>
+            <h3>35</h3>
+            <p>On going</p>
+          </div>
+        </div>
       </div>
-
-
-
 
 
     </div>
