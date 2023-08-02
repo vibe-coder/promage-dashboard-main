@@ -2,14 +2,20 @@ import React from 'react'
 import "./SCSS/Header.scss"
 import user from "../Images/ME.jpg"
 import arrowDown from "../Images/arrow-down.svg"
+import searchIcon from "../Images/icons8-search.svg"
 
 
 function Header() {
   return (
     <div className='header-container'>
       
-      <div className='dashboard-wrapper'>
+      <div className='header-wrapper'>
+
+        {/* Title */}
+
         <h1 className='dashboard'>Dashboard</h1>
+
+        {/* Bio Wrapper */}
 
         <div className='bio-wrapper'>
           <div className='picture'>
@@ -26,12 +32,16 @@ function Header() {
           </div>
         </div>
       </div>
-      
+
+      {/* Search Wrapper */}
       
       <div className='search-wrapper'>
         <div className='wrapper'>
           <input className='search-input' placeholder='Search for anything...' />
-          <div className='circle'>.</div>
+          
+          <button className='circle'>
+            <img src={searchIcon} alt="SearchIcon" />
+          </button>
         </div>
       </div>
     </div>
