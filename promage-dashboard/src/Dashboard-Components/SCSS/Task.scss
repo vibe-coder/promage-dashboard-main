@@ -5,14 +5,14 @@ body{
 }
 
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
   .task-container{
     // background-color: red;  
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    background-color: #E65F2B;
+    // background-color: #E65F2B;
 
     // * DAILY TASK
     
@@ -143,7 +143,7 @@ body{
     }
 
 
-    // ** PROJECTS WORKLOAD
+    // ************************************************* PROJECTS WORKLOAD
 
     .project-workload-wrapper{
       background-color: rgba(255, 255, 255, .5);
@@ -157,7 +157,7 @@ body{
         margin-bottom: 20px;
         
         h3{
-          font-size: 1.2rem;
+          font-size: 1rem;
           font-weight: 600;
           margin: 0;
         }
@@ -165,7 +165,7 @@ body{
         div{
           display: flex;
           align-items: center;
-          background-color: rgba($color: #ffffff, $alpha: 1.0);
+          background-color: rgba($color: #ffffff, $alpha: 1);
           height: 40px;
           padding: 0 15px;
           border-radius: 20px;

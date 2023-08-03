@@ -5,11 +5,11 @@ body{
 }
 
 
-@media (min-width: 360px) {
+@media (min-width: 320px) {
 
   .overview-container{
     padding: 20px;
-    background-color:  blue;
+    // background-color:  blue;
     // margin-bottom: 10px;
     
     .overview-header{
@@ -56,19 +56,28 @@ body{
         padding: 10px;
         width: 40%;
         flex-grow: 1;
+        height: 150px;
     
         .icon-1{
-          margin-bottom: 20px;
+          background-color: YELLOW;
+          height: 30%;
+          margin-bottom: 10px;
         }
 
         // * Figure Wrapper
     
         .figure-wrapper{
+          background-color: red;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          height: 60%;
+          
           p{
             font-weight: 400;
             color: #797979;
             margin: 0;
-            margin-bottom: 20px;
+            // margin-bottom: 20px;
             font-size: 1rem;
           }
     
@@ -89,7 +98,7 @@ body{
           .description-wrapper{
             display: flex;
             gap: 5px;
-            margin-top: 20px;
+            // margin-top: 20px;
             align-items: center;
     
             p{

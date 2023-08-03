@@ -1,11 +1,11 @@
-@media (min-width: 368px) {
+@media (min-width: 320px) {
   .project-summary-container{
     display: flex;
     flex-direction: column;
     gap: 10px;
     // margin-bottom: 90px;
     padding: 20px;
-    background-color: green;
+    // background-color: green;
 
     .summary-wrapper{
       background-color: rgba(255, 255, 255, .5);
