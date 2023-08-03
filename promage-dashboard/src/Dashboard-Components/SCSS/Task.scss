@@ -122,7 +122,7 @@ body{
               }
 
               .task-status{
-                background-color: rgba($color: #1A932E, $alpha: .3);
+                background-color: rgba($color: #1A932E, $alpha: .1);
                 color: #1A932E;
                 padding: 6px 15px;
                 border-radius: 20px;
@@ -130,9 +130,7 @@ body{
                 align-items: center;
                 justify-content: center;
               }
-              
             }
-
           }
         }
       }

@@ -22,10 +22,10 @@ function Task() {
           
           <div className='task-list'>
             <div className="task-switch-wrapper">
-              <button>All <div className='task-count'><p>10</p></div></button>
-              <button>Important <div className='task-count'><p>0</p></div></button>
-              <button>Notes <div className='task-count'><p>05</p></div></button>
-              <button>Links <div className='task-count'><p>10</p></div></button>
+              <button><p>All</p><div className='task-count'><p>10</p></div></button>
+              <button><p>Important</p><div className='task-count'><p>0</p></div></button>
+              <button><p>Notes</p><div className='task-count'><p>05</p></div></button>
+              <button><p>Links</p><div className='task-count'><p>10</p></div></button>
             </div>
       
             <div className="task-items-wrapper">
@@ -59,9 +59,6 @@ function Task() {
                 <p className='task-name'>Interactive prototype fro app screens of deltamine project</p>
                 <div className='task-status'>Approved</div>
               </div>
-
-
-
             </div>
           </div>
         </div>

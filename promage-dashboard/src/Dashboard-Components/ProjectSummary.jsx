@@ -69,7 +69,7 @@ function ProjectSummary() {
                   <td className='body-item'><p>Om prakash sao</p></td>
                   <td className='body-item'><p>May 25, 2023</p></td>
                   <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
                 </tr>
 
                 <tr className='row-body'>
@@ -77,7 +77,7 @@ function ProjectSummary() {
                   <td className='body-item'><p>Om prakash sao</p></td>
                   <td className='body-item'><p>May 25, 2023</p></td>
                   <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
                 </tr>
 
                 <tr className='row-body'>
@@ -85,7 +85,7 @@ function ProjectSummary() {
                   <td className='body-item'><p>Om prakash sao</p></td>
                   <td className='body-item'><p>May 25, 2023</p></td>
                   <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
                 </tr>
 
                 <tr className='row-body'>
@@ -93,7 +93,7 @@ function ProjectSummary() {
                   <td className='body-item'><p>Om prakash sao</p></td>
                   <td className='body-item'><p>May 25, 2023</p></td>
                   <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
                 </tr>
 
                 <tr className='row-body'>
@@ -101,7 +101,7 @@ function ProjectSummary() {
                   <td className='body-item'><p>Om prakash sao</p></td>
                   <td className='body-item'><p>May 25, 2023</p></td>
                   <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'>100%</div></td>
+                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
                 </tr>
 
               </tbody> 
@@ -153,8 +153,6 @@ function ProjectSummary() {
           </div>
         </div>
       </div>
-
-
     </div>
   )
 }
