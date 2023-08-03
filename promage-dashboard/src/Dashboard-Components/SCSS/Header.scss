@@ -6,7 +6,7 @@ body{
 // ************* Mobile View
 
 
-@media (min-width: 320px){
+@media (min-width: 375px) and (max-width: 428px){
   .header-container{
     border-bottom: solid 1px rgba(0, 0, 0, .3);
     padding: 20px;
@@ -33,8 +33,8 @@ body{
       .bio-wrapper{
         background-color: rgba(255, 255, 255, 1);
         display: flex;
-        height: 20px;
-        width: 130px;
+        height: 30px;
+        width: 160px;
         border-radius: 40px;
         align-items: center;
         padding: 10px;
@@ -44,7 +44,7 @@ body{
           height: 30px;
           width: 30px;
           border-radius: 20px;
-          margin-right: 0px;
+          margin-right: 7px;
 
           .user-image{
             width: 100%;
@@ -55,19 +55,19 @@ body{
         }
 
         .name{
-          width: 70px;
           // background-color: red;
+          flex: 1;
           
           h3,p{
             margin: 0;
           }
           h3{
             
-            font-size: .8rem;
+            font-size: .9rem;
             // margin-bottom: 3px;
           }
           p{
-            font-size: .49rem;
+            font-size: .65rem;
           }
         }
 

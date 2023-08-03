@@ -5,7 +5,7 @@ body{
 }
 
 
-@media (min-width: 320px) {
+@media (min-width: 375px) and (max-width: 428px) {
   .task-container{
     // background-color: red;  
     display: flex;
@@ -157,7 +157,7 @@ body{
         margin-bottom: 20px;
         
         h3{
-          font-size: 1rem;
+          font-size: 1.2rem;
           font-weight: 600;
           margin: 0;
         }
@@ -173,6 +173,14 @@ body{
           justify-content: space-between;
           align-items: center;
           gap: 15px;
+          width: 90px;
+
+          p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 1rem;
+          }
         }
       }
 

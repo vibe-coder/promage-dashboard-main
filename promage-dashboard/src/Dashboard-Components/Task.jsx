@@ -77,7 +77,7 @@ function Task() {
         <div className="project-workload-header">
           <h3>Projects Workload</h3>
           <div>
-            Last 3 Months 
+            <p>Last 3 Months</p>
             <img src={arrowDown} alt="Arrow Down Icon"/>
           </div>
         </div>
