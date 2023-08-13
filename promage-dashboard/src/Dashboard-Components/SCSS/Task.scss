@@ -5,6 +5,236 @@ body{
 }
 
 
+
+// ******************************************************************************************* Small Mobile View
+
+
+@media (min-width: 320px) and (max-width: 374px) {
+  .task-container{
+    // background-color: red;  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    // background-color: #E65F2B;
+
+    // * DAILY TASK
+    
+    .daily-task{
+      background-color: rgba(255, 255, 255, .5);
+      padding: 20px;
+      border-radius: 20px;
+      
+      .caution-wrapper{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: flex-end;
+        img{
+          height: 17px;
+          mix-blend-mode: multiply;
+        }
+        p{
+          margin: 0;
+          font-size: .9rem;
+        }
+      }
+
+      h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+        margin-bottom: 25px;
+      }
+
+      // ****************************** TAASK WRAPPER
+  
+      .task-wrapper{
+        margin-top: 10px;
+        overflow-x: scroll;
+        
+
+        .task-list{
+          width: 270%;
+
+          // *********************************** Task Switch Button Wrapper
+
+          .task-switch-wrapper{
+            border-bottom: solid 1px black;
+            display: flex;
+            gap: 40px;
+            padding-bottom: 5px;
+
+            button{
+              display: flex;
+              align-items: center;
+              border: none;
+              height: 30px;
+              padding: 0 13px;
+              gap: 10px;
+              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              background-color: transparent;
+              font-size: .9rem;
+
+              .task-count{
+                background-color: rgba($color: #2B5CE6, $alpha: .2);
+                color: #2B5CE6;
+                height: 25px;
+                width: 25px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                  margin: 0;
+                  font-size: .9rem;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          // ********************************* Task Items Wrapper
+
+          .task-items-wrapper{
+            margin-top: 15px;
+            
+            .task{
+              display: flex;
+              align-items: center;
+
+              .task-checkbox{
+                margin-right: 15px;
+                appearance: none;
+                -webkit-appearance: none;
+                font: inherit;
+                width: 25px;
+                height: 25px;
+                border: .9px solid;
+                border-radius: 20px;
+              }
+
+              .task-checkbox:checked{
+                background-color: #E65F2B;
+                border: .9px transparent;
+              }
+
+              .task-name{
+                flex: 1;
+                font-size: 1rem;
+              }
+
+              .task-status{
+                background-color: rgba($color: #1A932E, $alpha: .1);
+                color: #1A932E;
+                padding: 6px 15px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+
+      .task-wrapper::-webkit-scrollbar{
+        display: none;
+      }
+    }
+
+    // ************************************************* PROJECTS WORKLOAD
+
+    .project-workload-wrapper{
+      background-color: rgba(255, 255, 255, .5);
+      padding: 20px;
+      border-radius: 20px;
+
+      .project-workload-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 50px;
+        
+        h3{
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        div{
+          display: flex;
+          align-items: center;
+          background-color: rgba($color: #ffffff, $alpha: 1);
+          height: 40px;
+          padding: 0 15px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 15px;
+          width: 90px;
+
+          p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: .9rem;            
+          }
+        }
+      }
+
+      .project-workload-body{
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        overflow-x: scroll;
+
+        .user{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+
+          .figure{
+            border: solid 1.2px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: .9rem;
+          }
+
+          .figure:nth-child(1){
+            background-color: #000000;
+            color: #ffffff;
+            border-color: #000000;
+          }
+
+
+          h4{
+            margin: 0;
+            margin-top: 10px;
+            font-size: .9rem;
+            font-weight: 400;
+          }
+        }
+      }
+
+      .project-workload-body::-webkit-scrollbar{
+        display: none;
+      }
+    }
+  }
+}
+
+// *********************************************************************************************************** Large Mobile View
+
 @media (min-width: 375px) and (max-width: 428px) {
   .task-container{
     // background-color: red;  
@@ -43,15 +273,12 @@ body{
         margin: 0;
       }
 
-
       // ****************************** TAASK WRAPPER
 
-  
       .task-wrapper{
         margin-top: 10px;
         overflow-x: scroll;
         
-
         .task-list{
           width: 170%;
 
@@ -61,6 +288,7 @@ body{
             border-bottom: solid 1px black;
             display: flex;
             gap: 40px;
+            padding-bottom: 5px;
 
             button{
               display: flex;
@@ -140,7 +368,6 @@ body{
       }
     }
 
-
     // ************************************************* PROJECTS WORKLOAD
 
     .project-workload-wrapper{
@@ -211,6 +438,222 @@ body{
             border-color: #000000;
           }
 
+          h4{
+            margin: 0;
+            margin-top: 10px;
+            font-size: .9rem;
+            font-weight: 400;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ******************************************************************************************************* Laptop and Desktop View
+
+@media (min-width: 1200px) {
+  .task-container{
+    // background-color: red;  
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    // background-color: #E65F2B;
+
+    // * DAILY TASK
+    
+    .daily-task{
+      background-color: rgba(255, 255, 255, .5);
+      padding: 20px;
+      border-radius: 20px;
+      
+      .caution-wrapper{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 10px;
+        justify-content: flex-end;
+        img{
+          height: 17px;
+          mix-blend-mode: multiply;
+        }
+        p{
+          margin: 0;
+          font-size: .8rem;
+        }
+      }
+
+      h3{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0;
+      }
+
+      // ****************************** TAASK WRAPPER
+
+      .task-wrapper{
+        margin-top: 10px;
+        overflow-x: scroll;
+        
+        .task-list{
+          width: 170%;
+
+          // *********************************** Task Switch Button Wrapper
+
+          .task-switch-wrapper{
+            border-bottom: solid 1px black;
+            display: flex;
+            gap: 40px;
+            padding-bottom: 5px;
+
+            button{
+              display: flex;
+              align-items: center;
+              border: none;
+              height: 30px;
+              padding: 0 13px;
+              gap: 10px;
+              // border-bottom: solid 2px #2B5CE6;
+              font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+              background-color: transparent;
+
+              .task-count{
+                background-color: rgba($color: #2B5CE6, $alpha: .2);
+                color: #2B5CE6;
+                height: 20px;
+                width: 20px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                p{
+                  margin: 0;
+                  font-size: .7rem;
+                  font-weight: 600;
+                }
+              }
+            }
+          }
+
+          // ********************************* Task Items Wrapper
+
+          .task-items-wrapper{
+            margin-top: 15px;
+            
+            .task{
+              display: flex;
+              align-items: center;
+
+              .task-checkbox{
+                margin-right: 15px;
+                appearance: none;
+                -webkit-appearance: none;
+                font: inherit;
+                width: 25px;
+                height: 25px;
+                border: .9px solid;
+                border-radius: 20px;
+              }
+
+              .task-checkbox:checked{
+                background-color: #E65F2B;
+                border: .9px transparent;
+              }
+
+              .task-name{
+                flex: 1;
+                font-size: 1rem;
+              }
+
+              .task-status{
+                background-color: rgba($color: #1A932E, $alpha: .1);
+                color: #1A932E;
+                padding: 6px 15px;
+                border-radius: 20px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              }
+            }
+          }
+        }
+      }
+
+      .task-wrapper::-webkit-scrollbar{
+        display: none;
+      }
+    }
+
+    // ************************************************* PROJECTS WORKLOAD
+
+    .project-workload-wrapper{
+      background-color: rgba(255, 255, 255, .5);
+      padding: 20px;
+      border-radius: 20px;
+
+      .project-workload-header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        h3{
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin: 0;
+        }
+
+        div{
+          display: flex;
+          align-items: center;
+          background-color: rgba($color: #ffffff, $alpha: 1);
+          height: 40px;
+          padding: 0 15px;
+          border-radius: 20px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 15px;
+          width: 90px;
+
+          p{
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .project-workload-body{
+        display: flex;
+        justify-content: space-between;
+
+        .user{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: flex-end;
+
+          .figure{
+            border: solid 1.2px;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: .9rem;
+          }
+
+          .figure:nth-child(1){
+            background-color: #000000;
+            color: #ffffff;
+            border-color: #000000;
+          }
 
           h4{
             margin: 0;

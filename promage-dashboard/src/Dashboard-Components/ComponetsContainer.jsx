@@ -4,14 +4,22 @@ import Header from './Header'
 import Overview from './Overview'
 import ProjectSummary from './ProjectSummary'
 import Task from './Task'
+import Sidebar from './Sidebar'
 
 function ComponetsContainer() {
   return (
     <div className='component-container'>
-      <Header/>
-      <Overview/>
-      <ProjectSummary/>
-      <Task/>
+      <div className='sidebar-wrapper'>
+        <Sidebar/>
+      </div>
+
+      <div className='other-components'>
+        <Header/>
+        {/* <Overview/>
+        <ProjectSummary/>
+        <Task/> */}
+        hey
+      </div>
     </div>
   )
 }
