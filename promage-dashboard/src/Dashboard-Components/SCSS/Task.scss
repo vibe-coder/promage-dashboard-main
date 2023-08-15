@@ -6,7 +6,7 @@ body{
 
 
 
-// ******************************************************************************************* Small Mobile View
+// *********************************** Small Mobile View *****************************************
 
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -233,7 +233,7 @@ body{
   }
 }
 
-// *********************************************************************************************************** Large Mobile View
+// ************************************** Large Mobile View **************************************
 
 @media (min-width: 375px) and (max-width: 428px) {
   .task-container{
@@ -450,23 +450,24 @@ body{
   }
 }
 
-// ******************************************************************************************************* Laptop and Desktop View
+// ************************************* Desktop View *******************************************
 
 @media (min-width: 1200px) {
   .task-container{
-    // background-color: red;  
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 20px;
-    // background-color: #E65F2B;
+    flex-direction: row;
+    gap: 30px;
+    padding: 0px 40px;
+    justify-content: space-between;
 
-    // * DAILY TASK
+    // *************** DAILY TASK
     
     .daily-task{
-      background-color: rgba(255, 255, 255, .5);
+      background-color: rgba(255, 255, 255, .3);
       padding: 20px;
       border-radius: 20px;
+      width: 65%;
+      height: 330px;
       
       .caution-wrapper{
         display: flex;
@@ -474,6 +475,7 @@ body{
         align-items: center;
         margin-bottom: 10px;
         justify-content: flex-end;
+
         img{
           height: 17px;
           mix-blend-mode: multiply;
@@ -494,10 +496,10 @@ body{
 
       .task-wrapper{
         margin-top: 10px;
+        height: 260px;
         overflow-x: scroll;
         
         .task-list{
-          width: 170%;
 
           // *********************************** Task Switch Button Wrapper
 
@@ -585,19 +587,22 @@ body{
       }
     }
 
-    // ************************************************* PROJECTS WORKLOAD
+    // ******************** PROJECTS WORKLOAD
 
     .project-workload-wrapper{
-      background-color: rgba(255, 255, 255, .5);
+      background-color: rgba(255, 255, 255, .3);
       padding: 20px;
       border-radius: 20px;
+      width: 35%;
+      // height: 300px;
+      
 
       .project-workload-header{
         display: flex;
         justify-content: space-between;
         align-items: center;
         margin-bottom: 20px;
-        
+                
         h3{
           font-size: 1.2rem;
           font-weight: 600;
@@ -635,6 +640,7 @@ body{
           flex-direction: column;
           align-items: center;
           justify-content: flex-end;
+          height: 240px;
 
           .figure{
             border: solid 1.2px;

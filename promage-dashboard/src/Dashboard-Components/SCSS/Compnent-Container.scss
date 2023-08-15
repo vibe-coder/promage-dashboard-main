@@ -18,18 +18,21 @@ body{
 }
 
 
+// **************** DESKTOP VIEW
+
 @media (min-width: 1200px) {
   .component-container{
     background-color: #EBDFD7;
     display: flex;
-    // width: 100vw;
-    // height: 100vh;
+    height: 160vh;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: hidden; 
     
+    .sidebar-wrapper{
+      // padding: 0;
+    }
 
     .other-components{
-      background-color: red;
       width: 100%;
     }
   }

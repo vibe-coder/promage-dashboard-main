@@ -11,14 +11,14 @@ function ComponetsContainer() {
     <div className='component-container'>
       <div className='sidebar-wrapper'>
         <Sidebar/>
+        {/* hey  */}
       </div>
 
       <div className='other-components'>
         <Header/>
-        {/* <Overview/>
+        <Overview/>
         <ProjectSummary/>
-        <Task/> */}
-        hey
+        <Task/>
       </div>
     </div>
   )

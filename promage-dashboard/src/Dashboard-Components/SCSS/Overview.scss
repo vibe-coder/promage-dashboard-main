@@ -1,4 +1,4 @@
-// ******************************************************************************************* Small Mobile View
+// *********************************************** Small Mobile View *********************************************
 // @media (min-width: 320px) and (max-width: 374px) {
 //     p{
 //       font-size: .85rem !important; 
@@ -53,7 +53,7 @@
       // background-color: red;
       
       .container{
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, .3);
         border: none;
         border-radius: 20px;
         padding: 10px;
@@ -128,7 +128,7 @@
 }
 
 
-// *********************************************************************************************************** Large Mobile View
+// *********************************************** Large Mobile View *********************************************
 
 
 @media (min-width: 375px) and (max-width: 428px) {
@@ -174,7 +174,7 @@
       // background-color: red;
       
       .container{
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, .3);
         border: none;
         border-radius: 20px;
         padding: 10px;
@@ -238,12 +238,12 @@
   }
 }
 
-// ******************************************************************************************************* Laptop and Desktop View
+// ****************************************** Desktop View *************************************
 
 @media (min-width: 1200px) {
   .overview-container{
-    padding: 20px;
-    padding-top: 90px;
+    padding: 0px 40px;
+    margin-bottom: 30px;
     
     .overview-header{
       display: flex;
@@ -253,14 +253,14 @@
 
       h3{
         font-size: 1.2rem;
-        font-weight: 500;
+        font-weight: 600;
         margin: 0;
         color: #060606;
       }
 
       .date{
         background-color: rgba(255, 255, 255,1);
-        height: 20px;
+        height: 12px;
         padding: 10px 16px;
         border-radius: 30px;
         display: flex;
@@ -279,28 +279,26 @@
     .section-container{
       display: flex;
       flex-wrap: wrap;
-      gap: 10px;
-      // background-color: red;
+      gap: 15px;
       
       .container{
-        background-color: rgba(255, 255, 255, .5);
+        background-color: rgba(255, 255, 255, .3);
         border: none;
         border-radius: 20px;
-        padding: 10px;
-        width: 40%;
+        padding: 20px;
+        width: 100px;
         flex-grow: 1;
-        height: 180px;
+        height: 160px;
     
         .icon-1{
-          // background-color: YELLOW;
           height: 30%;
-          margin-bottom: 10px;
+          margin-bottom: 20px;
         }
 
-        // * Figure Wrapper
+        // ************ Figure Wrapper
     
         .figure-wrapper{
-          // background-color: red;
+          
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -311,11 +309,11 @@
             color: #797979;
             margin: 0;
             // margin-bottom: 20px;
-            font-size: 1rem;
+            font-size: 1.1rem;
           }
     
           h1{
-            font-size: 1.6rem;
+            font-size: 2rem;
             margin: 0;
             color: #060606;
             line-height: 20px;
@@ -336,7 +334,7 @@
     
             p{
               margin: 0;
-              font-weight: 400;
+              font-weight: 500;
               font-size: .8rem;
               color: #060606;
             }

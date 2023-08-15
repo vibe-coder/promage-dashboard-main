@@ -8,9 +8,7 @@ import searchIcon from "../Images/icons8-search.svg"
 function Header() {
   return (
     <div className='header-container'>
-      
       <div className='header-wrapper'>
-
         {/* Title */}
 
         <h1 className='dashboard'>Dashboard</h1>

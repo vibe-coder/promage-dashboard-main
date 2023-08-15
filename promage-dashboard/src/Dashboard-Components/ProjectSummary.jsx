@@ -6,8 +6,8 @@ import progressMeasure from "../Images/progress-measure.svg"
 
 function ProjectSummary() {
   return (
+    
     <div className='project-summary-container'>
-
 
       {/* Project Summary */}
 
@@ -18,7 +18,6 @@ function ProjectSummary() {
           <img src={arrowRight} alt='caution' />
           <p>Scroll right for more info</p>
         </div>
-
 
         {/* Project Summary Selection */}
 
@@ -45,14 +44,11 @@ function ProjectSummary() {
             </div>
           </div>
 
-
-
           {/* Project Summary Body */}
 
           <div className='summary-body'>
 
             <table className='table'>
-              
               <thead className='table-header-wrapper'>
                 <tr className='header'>
                   <th className='header-item'><p>Name</p></th>

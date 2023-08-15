@@ -1,6 +1,6 @@
 
 
-// ******************************************************************************************* Small Mobile View
+// *********************************** Small Mobile View *****************************************
 
 @media (min-width: 320px) and (max-width: 374px) {
   .project-summary-container{
@@ -285,7 +285,7 @@
   }
 }
 
-// *********************************************************************************************************** Large Mobile View
+// ************************************** Large Mobile View **************************************
 
 @media (min-width: 375px) and (max-width: 428px) {
   .project-summary-container{
@@ -560,23 +560,23 @@
   }
 }
 
-// ******************************************************************************************************* Laptop and Desktop View
+// ************************************* Desktop View *******************************************
 
 @media (min-width: 1200px) {
   .project-summary-container{
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    // margin-bottom: 90px;
-    padding: 20px;
-    // background-color: green;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 0px 40px;
+    margin-bottom: 30px;
 
     .summary-wrapper{
-      background-color: rgba(255, 255, 255, .5);
+      background-color: rgba(255, 255, 255, .3);
       border-radius: 20px;
       padding: 20px;
-      // height: 410px;
-      // background-color: orange;
+      width: 65%; 
+      height: 360px; 
       
       // ******************************* Project Caution Wrapper
 
@@ -600,28 +600,20 @@
 
       // ******************************** Project Summary Selection
 
-      .scroll-x{
-        // background-color: green;
-        overflow: scroll;
+      .scroll-x{      
 
         .summary-header{
           display: flex;
           justify-content: space-between;
           align-items: flex-end;
-          margin-bottom: 20px;
-          width: 200vw;
-          // border: solid 1px rgb(179, 179, 179);
+          margin-bottom: 20px;      
           border-radius: 30px;
-          // padding: 0 5px;
           height: 50px;
   
           .title-wrapper{
-            // background-color: rgb(255, 255, 255);
-            // padding: 10px 17px;
             display: flex;
             align-items: center;
             border-radius: 20px;
-
       
             h3{
               font-size: 1.2rem;
@@ -633,7 +625,7 @@
           .button-wrapper{
             display: flex;
             overflow: hidden;
-            gap: 20px;
+            gap: 10px;
             align-items: center;
   
             .selection{
@@ -642,6 +634,8 @@
               display: flex;
               gap: 15px;
               border-radius: 20px;
+              height: 12px;
+              align-items: center;
   
               p{
                 margin: 0;
@@ -653,16 +647,14 @@
         // ********************************** Project Summary Body
   
         .summary-body{
-          // overflow: hidden;
-          width: 200vw;
-          // background-color: blue;
+          width: 100%;  
+          overflow-y: scroll;
+          height: 264px; 
           
           .table{
-            width: 200vw;
+            width: 100%;
             border-collapse: collapse;
             border-spacing: 0;
-            // background-color: purple;
-
 
             // *********************************** Table Header
 
@@ -682,6 +674,7 @@
                   height: 30px;
                   p{
                     margin: 0;
+                    font-weight: 600;
                   }
                 }
 
@@ -695,10 +688,9 @@
             // ************************************* Table Body
 
             .table-body-wrapper{
-              // border: solid;
 
               .row-body{
-                // background-color: red;
+                // background-color: blue;
                 
                 .body-item:last-child{
                   text-align: right;
@@ -707,13 +699,12 @@
                 .body-item{
                   height: 50px;
                   border-bottom: solid .1rem transparent;
-                  // border-top: solid .08rem red;
                 }
 
                 .body-item:nth-child(4) .status-bar{
                   background-color: rgba($color: #1A932E, $alpha: .1);
                   height: 60%;
-                  width: 90%;
+                  width: 100%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
@@ -728,32 +719,25 @@
             }
           }
         }
-      }
-
-      .scroll-x::-webkit-scrollbar{
-        display: none;
+        
+        .summary-body::-webkit-scrollbar{
+          display: none;
+        }
       }
     }
 
-
-
-    // ***************************************** Overall Progress
-
+    // ************************************************************** Overall Progress
 
     .overall-progress-container{
-      background-color: rgba(255, 255, 255, .5);
+      background-color: rgba(255, 255, 255, .3);
       height: 360px;
+      width: 35%;
       border-radius: 20px;
       padding: 20px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       gap: 5px;
-
-
-      .top, .middle, .bottom{
-        // background-color: green;
-      }
 
       .top{
         display: flex;
@@ -773,12 +757,17 @@
           align-items: center;
           background-color: rgba($color: #ffffff, $alpha: 1.0);
           height: 40px;
-          padding: 0 15px;
+          padding: 10px 15px;
           gap: 15px;
+          height: 12px;
           border-radius: 20px;
           display: flex;
           justify-content: space-between;
           align-items: center;
+
+          p{
+            margin: 0;
+          }
         }
       }
 

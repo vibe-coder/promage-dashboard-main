@@ -12,14 +12,21 @@ import usersIcon from "../Images/users-icon.svg"
 import templateIcon from "../Images/template-icon.svg"
 import settingIcon from "../Images/settings-icon.svg"
 import helpIcon from "../Images/help-icon.svg"
+import arrowDown from "../Images/arrow-down.svg"
 
 
 
 function Sidebar() {
   return (
-    <div className='sidebar-container'>
+    <div className='sidebar-container'> 
+
+      <div className="reveal-button">
+        <img src={arrowDown} alt='arrow down'/>
+      </div>
+
       <div className='sidebar-wrapper'>
-      <div className="logo-wrapper">
+        
+        <div className="logo-wrapper">
           <img src={promageLogo} alt='promage logo' />
         </div>
 
