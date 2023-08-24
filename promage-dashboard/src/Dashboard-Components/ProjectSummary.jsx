@@ -16,7 +16,7 @@ function ProjectSummary() {
 
         <div className='caution-wrapper'>
           <img src={arrowRight} alt='caution' />
-          <p>Scroll right for more info</p>
+          <p>Scroll for more info</p>
         </div>
 
         {/* Project Summary Selection */}

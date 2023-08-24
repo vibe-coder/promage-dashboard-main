@@ -11,7 +11,7 @@ function Task() {
       <div className="daily-task">
         <div className='caution-wrapper'>
           <img src={arrowRight} alt='caution' />
-          <p>Scroll right for more info</p>
+          <p>Scroll for more info</p>
         </div>
 
         <h3>Today task</h3>
@@ -69,6 +69,11 @@ function Task() {
 
       <div className="project-workload-wrapper">
 
+        <div className='caution-wrapper'>
+          <img src={arrowRight} alt='caution' />
+          <p>Scroll for more info</p>
+        </div>
+
         {/* Projects Workload Header */}
 
         <div className="project-workload-header">
@@ -82,6 +87,7 @@ function Task() {
         {/* Projects Worload Body */}
 
         <div className='project-workload-body'>
+
 
           <div className='user'>
             <div className='figure'>1</div>

@@ -6,34 +6,119 @@ body{
 
 
 
-// **************** MOBILE VIEW
+// ************************************** MOBILE VIEW ***************************************
 
-@media (min-width: 320px) and (min-width: 475px) {
+@media (min-width: 320px) and (max-width: 428px) {
   .component-container{
     background-color: #EBDFD7;
-    // padding: 20px;
-    // padding-bottom: 50px;
+    position: relative;
     height: 100vh;
+    user-select: none;
+
+    // *******************************************
+
+    .sidebar-component{
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      z-index: 1;
+      display: flex;
+
+      .sidebar-box{
+        width: 80vw;
+        background-color: rgba($color: #000000, $alpha: 1);
+        z-index: 1;
+        display: flex;
+      }
+  
+      .reveal-button{
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        width: 33px;
+        height: 33px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        margin-top: 20px;
+        margin-left: 13px;
+        cursor: pointer;
+        z-index: 2;
+        border: none;
+        // box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: .2);
+  
+        img{
+          transform: rotate(-90deg);
+          // filter: invert(100%);
+          height: 9px;
+        }
+      }
+    }
+
+    // *******************************************
+
+    .other-components{
+      // padding-top: 50px;
+      height: 100%;
+      overflow: auto;
+    }
   }
 }
 
 
-// **************** DESKTOP VIEW
+
+
+// ****************************************** DESKTOP VIEW *************************************
+
+
+
+
 
 @media (min-width: 1200px) {
   .component-container{
     background-color: #EBDFD7;
     display: flex;
-    height: 160vh;
-    overflow-x: hidden;
-    overflow-y: hidden; 
+    height: 100vh;
+    user-select: none;
+    overflow: scroll;
     
-    .sidebar-wrapper{
-      // padding: 0;
+    .sidebar-component{ 
+      display: flex;
+      position: relative;
+      height: 100vh;
+  
+      .reveal-button{
+        background-color: rgba($color: #ffffff, $alpha: 1);
+        width: 28px;
+        height: 28px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 20px;
+        cursor: pointer;
+        box-shadow: 0px 0px 20px rgba($color: #000000, $alpha: .2);
+        z-index: 2;
+        margin-top: 33px;
+        margin-right: -20px;
+        border: none;
+  
+        img{
+          transform: rotate(-90deg);
+          // filter: invert(100%);
+          height: 7px;
+        }
+      }
     }
+    
 
     .other-components{
       width: 100%;
+      overflow: scroll;
+      padding-bottom: 50px;
+    }
+
+    .other-components::-webkit-scrollbar{
+      display: none;
     }
   }
 

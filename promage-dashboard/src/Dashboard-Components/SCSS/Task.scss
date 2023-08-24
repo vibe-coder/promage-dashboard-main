@@ -11,12 +11,10 @@ body{
 
 @media (min-width: 320px) and (max-width: 374px) {
   .task-container{
-    // background-color: red;  
     display: flex;
     flex-direction: column;
     gap: 10px;
     padding: 20px;
-    // background-color: #E65F2B;
 
     // * DAILY TASK
     
@@ -31,6 +29,7 @@ body{
         align-items: center;
         margin-bottom: 30px;
         justify-content: flex-end;
+        
         img{
           height: 17px;
           mix-blend-mode: multiply;
@@ -150,6 +149,23 @@ body{
       background-color: rgba(255, 255, 255, .5);
       padding: 20px;
       border-radius: 20px;
+
+      .caution-wrapper{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: flex-end;
+        
+        img{
+          height: 17px;
+          mix-blend-mode: multiply;
+        }
+        p{
+          margin: 0;
+          font-size: .9rem;
+        }
+      }
 
       .project-workload-header{
         display: flex;
@@ -375,6 +391,23 @@ body{
       padding: 20px;
       border-radius: 20px;
 
+      .caution-wrapper{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: flex-end;
+        
+        img{
+          height: 17px;
+          mix-blend-mode: multiply;
+        }
+        p{
+          margin: 0;
+          font-size: .9rem;
+        }
+      }
+
       .project-workload-header{
         display: flex;
         justify-content: space-between;
@@ -467,7 +500,7 @@ body{
       padding: 20px;
       border-radius: 20px;
       width: 65%;
-      height: 330px;
+      height: 360px;
       
       .caution-wrapper{
         display: flex;
@@ -479,6 +512,7 @@ body{
         img{
           height: 17px;
           mix-blend-mode: multiply;
+          transform: rotate(-90deg);
         }
         p{
           margin: 0;
@@ -594,7 +628,23 @@ body{
       padding: 20px;
       border-radius: 20px;
       width: 35%;
-      // height: 300px;
+
+      .caution-wrapper{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 30px;
+        justify-content: flex-end;
+        
+        img{
+          height: 17px;
+          mix-blend-mode: multiply;
+        }
+        p{
+          margin: 0;
+          font-size: .9rem;
+        }
+      }
       
 
       .project-workload-header{
@@ -620,12 +670,12 @@ body{
           justify-content: space-between;
           align-items: center;
           gap: 15px;
-          width: 90px;
+          // width: 100px;
 
           p{
-            text-overflow: ellipsis;
-            white-space: nowrap;
-            overflow: hidden;
+            // text-overflow: ellipsis;
+            // white-space: nowrap;
+            // overflow: hidden;
             font-size: 1rem;
           }
         }
