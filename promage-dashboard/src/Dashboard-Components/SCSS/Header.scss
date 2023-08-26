@@ -3,7 +3,7 @@ body{
 }
 
 
-// *****************************************  Small Mobile View  ****************************************************
+//****** Small Mobile View ******
 
 
 @media (min-width: 320px) and (max-width: 374px) {
@@ -126,9 +126,7 @@ body{
   }
 }
 
-
-// *****************************************  Large Mobile View  **************************************************
-
+//****** Large Mobile View ******
 
 @media (min-width: 375px) and (max-width: 428px){
   .header-container{
@@ -252,7 +250,7 @@ body{
   }
 }
 
-// *****************************************  Desktop View  ******************************************************
+//****** Desktop View ******
 
 @media (min-width: 1200px) {
   .header-container{

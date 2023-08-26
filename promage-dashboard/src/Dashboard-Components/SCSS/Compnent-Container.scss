@@ -6,7 +6,7 @@ body{
 
 
 
-// ************************************** MOBILE VIEW ***************************************
+//****** Mobile View ******
 
 @media (min-width: 320px) and (max-width: 428px) {
   .component-container{
@@ -65,14 +65,7 @@ body{
   }
 }
 
-
-
-
-// ****************************************** DESKTOP VIEW *************************************
-
-
-
-
+//****** Desktop View ******
 
 @media (min-width: 1200px) {
   .component-container{
