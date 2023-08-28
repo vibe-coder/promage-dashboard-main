@@ -8,47 +8,32 @@ import Sidebar from './Sidebar'
 import arrowLeft from "../Images/icon-left.png"
 import arrowRight from "../Images/icon-right.png"
 import { useState } from 'react'
-import { useCollapse } from 'react-collapsed'
+import Switch from '@mui/material/Switch';
+import Collapse from '@mui/material/Collapse';
 
 function ComponetsContainer() {
 
-  // const [sideBarWidth, setSideBarWidth] = useState(false)
 
-  // let sideBar = document.getElementById("sidebar-wrapper")
+  const [checked, setChecked] = useState(false);
 
-  const config = {
-    duration: 7000
-  }
-
-  const [isExpanded, setExpanded] = useState(false)
-  const { getCollapseProps, getToggleProps } = useCollapse({ isExpanded, config })
+  const handleChange = () => {
+    setChecked((prev) => !prev);
+  };
   
-
-
 
   return (
     <div className='component-container'>
       <div className='sidebar-component'>
-        <section className='sidebar-box' {...getCollapseProps()}>
-          <Sidebar/>
-        </section>
-
-        <button     {...getToggleProps({
-            onClick: () => setExpanded((prevExpanded) => !prevExpanded),
-          })}  className='reveal-button'>
-          {isExpanded ? <img src={arrowLeft} alt='arrow-left' /> : <img src={arrowRight} alt='arrow-right' />}
-        </button>
-      </div>
-      
-      {/* <div className='sidebar-component'>
-       <div className='sidebar-box'>
-          <Sidebar/>
+        <div className='sidebar-box'>
+          <Collapse orientation="horizontal" in={checked}>
+            <Sidebar/>
+          </Collapse>
         </div>
-        
-        <button className="reveal-button">
-          <img src={arrowDown} alt='arrow down'/>
+      
+        <button className="reveal-button" onClick={() => setChecked(!checked)}   control={<Switch checked={checked} onChange={handleChange} />}>
+          {checked ? <img src={arrowLeft} alt='arrow-left' /> : <img src={arrowRight} alt='arrow-right' />}
         </button>
-      </div>   */}
+      </div>  
 
       <div className='other-components'>
         <Header/>
