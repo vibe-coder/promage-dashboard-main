@@ -1,6 +1,5 @@
 import * as React from 'react';
 import { styled, alpha } from '@mui/material/styles';
-import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import EditIcon from '@mui/icons-material/Edit';
@@ -9,17 +8,24 @@ import ArchiveIcon from '@mui/icons-material/Archive';
 import FileCopyIcon from '@mui/icons-material/FileCopy';
 import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+import "./SCSS/Bio-Down-Button.scss"
+import user from "../Images/ME.jpg"
+import arrowDown from "../Images/arrow-down.svg"
+import arrowUp from "../Images/arrow-down.svg"
+import arrowLeft from "../Images/icon-left.png"
+import arrowRight from "../Images/icon-right.png"
+import { useState, useEffect } from 'react';
 
 const StyledMenu = styled((props) => (
   <Menu
     elevation={0}
     anchorOrigin={{
       vertical: 'bottom',
-      horizontal: 'right',
+      horizontal: 'left',
     }}
     transformOrigin={{
       vertical: 'top',
-      horizontal: 'right',
+      horizontal: 'left',
     }}
     {...props}
   />
@@ -27,13 +33,13 @@ const StyledMenu = styled((props) => (
 
 ))(({ theme }) => ({
   '& .MuiPaper-root': {
-    borderRadius: 6,
+    borderRadius: 9,
     marginTop: theme.spacing(1),
-    minWidth: 180,
+    minWidth: 130,
     color:
-      theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
-    boxShadow:
-      'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+      theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[400],
+    // boxShadow:
+    //   'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
     '& .MuiMenu-list': {
       padding: '4px 0',
     },
@@ -63,9 +69,28 @@ export default function BioDownButton() {
     setAnchorEl(null);
   };
 
+  const [checked, setChecked] = useState(false)  
+
   return (
-    <div>
-      <Button
+    <div className='bio-button-container'>
+      <div
+      onClick={() => setChecked(!checked)}
+      className='bio-wrapper'>
+        <div onClick={handleClick} className='arrow-trigger'>
+          <div className='picture'>
+            <img src={user} alt='user-img' className='user-image' />
+          </div>
+          <div className='name'>
+            <h3>Vibe Coder</h3>
+            <p>Frontend Developer</p>
+          </div>
+          {/* <div className='arrow'>
+            {checked ? <img src={arrowDown} alt='arrow-left'/> : <img style={{transform:'rotate(90deg)'}} src={arrowUp} alt='arrow-right' />}
+          </div> */}
+        </div>
+      </div>
+        
+      {/* <Button
         id="demo-customized-button"
         aria-controls={open ? 'demo-customized-menu' : undefined}
         aria-haspopup="true"
@@ -74,10 +99,10 @@ export default function BioDownButton() {
         disableElevation
         onClick={handleClick}
         endIcon={<KeyboardArrowDownIcon />}
+        className='bio-button'
       >
         Options
-      </Button>
-
+      </Button> */}
       
       <StyledMenu
         id="demo-customized-menu"
@@ -89,21 +114,16 @@ export default function BioDownButton() {
         onClose={handleClose}
       >
         <MenuItem onClick={handleClose} disableRipple>
-          <EditIcon />
-          Edit
+          {/* <EditIcon /> */}
+          Profile
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <FileCopyIcon />
-          Duplicate
-        </MenuItem>
-        <Divider sx={{ my: 0.5 }} />
-        <MenuItem onClick={handleClose} disableRipple>
-          <ArchiveIcon />
-          Archive
+          {/* <FileCopyIcon /> */}
+          My Account
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
-          <MoreHorizIcon />
-          More
+          {/* <ArchiveIcon /> */}
+          Logout
         </MenuItem>
       </StyledMenu>
     </div>
