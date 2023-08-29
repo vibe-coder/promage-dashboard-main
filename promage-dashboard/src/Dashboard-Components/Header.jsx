@@ -3,7 +3,7 @@ import "./SCSS/Header.scss"
 import user from "../Images/ME.jpg"
 import arrowDown from "../Images/arrow-down.svg"
 import searchIcon from "../Images/icons8-search.svg"
-import DropDownButton from './DropDownButton'
+import BioDownButton from './BioDownButton'
 
 
 function Header() {
@@ -31,7 +31,7 @@ function Header() {
           </div>
         </div> */}
 
-        <DropDownButton/>
+        <BioDownButton/>
       </div>
 
       {/* Search Wrapper */}
