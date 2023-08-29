@@ -3,6 +3,7 @@ import "./SCSS/Header.scss"
 import user from "../Images/ME.jpg"
 import arrowDown from "../Images/arrow-down.svg"
 import searchIcon from "../Images/icons8-search.svg"
+import DropDownButton from './DropDownButton'
 
 
 function Header() {
@@ -15,7 +16,7 @@ function Header() {
 
         {/* Bio Wrapper */}
 
-        <div className='bio-wrapper'>
+        {/* <div className='bio-wrapper'>
           <div className='picture'>
             <img src={user} alt='user-img' className='user-image' />
           </div>
@@ -28,7 +29,9 @@ function Header() {
           <div className='arrow'>
             <img src={arrowDown} alt="Arrow Down Icon"/>
           </div>
-        </div>
+        </div> */}
+
+        <DropDownButton/>
       </div>
 
       {/* Search Wrapper */}
