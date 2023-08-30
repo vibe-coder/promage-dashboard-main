@@ -1,4 +1,6 @@
 import * as React from 'react';
+
+
 import { styled, alpha } from '@mui/material/styles';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
@@ -8,6 +10,9 @@ import { useState } from 'react';
 import PersonIcon from '@mui/icons-material/Person';
 import LogoutIcon from '@mui/icons-material/Logout';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
+
+
+// Copy 1
 
 const StyledMenu = styled((props) => (
   <Menu
@@ -31,8 +36,6 @@ const StyledMenu = styled((props) => (
     minWidth: 130,
     color:
       theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[400],
-    // boxShadow:
-    //   'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
     '& .MuiMenu-list': {
       padding: '4px 0',
     },
@@ -53,6 +56,9 @@ const StyledMenu = styled((props) => (
 }));
 
 export default function BioDownButton() {
+  
+  // Copy 2
+  
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -62,12 +68,11 @@ export default function BioDownButton() {
     setAnchorEl(null);
   };
 
-  const [checked, setChecked] = useState(false)  
+  // const [checked, setChecked] = useState(false)  
 
   return (
     <div className='bio-button-container'>
       <div
-      onClick={() => setChecked(!checked)}
       className='bio-wrapper'>
         <div onClick={handleClick} className='arrow-trigger'>
           <div className='picture'>
@@ -96,6 +101,8 @@ export default function BioDownButton() {
       >
         Options
       </Button> */}
+
+      {/* Copy 3 */}
       
       <StyledMenu
         id="demo-customized-menu"
