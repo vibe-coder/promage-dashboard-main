@@ -105,18 +105,19 @@ export default function BioDownButton() {
         anchorEl={anchorEl}
         open={open}
         onClose={handleClose}
+        className="styled-menu"
       >
         <MenuItem onClick={handleClose} disableRipple>
           <PersonIcon />
-          Profile
+          <p style={{margin: 0, fontSize: '1rem'}}>Profile</p>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <AdminPanelSettingsIcon />
-          My Account
+          <p style={{margin: 0, fontSize: '1rem'}}>My Account</p>
         </MenuItem>
         <MenuItem onClick={handleClose} disableRipple>
           <LogoutIcon />
-          Logout
+          <p style={{margin: 0, fontSize: '1rem'}}>Logout</p>
         </MenuItem>
       </StyledMenu>
     </div>
