@@ -660,13 +660,15 @@ body{
           display: flex;
           align-items: center;
           background-color: rgba($color: #ffffff, $alpha: 1);
-          height: 40px;
-          padding: 0 15px;
+          padding: 10px 15px;
+          gap: 15px;
+          height: 12px;
           border-radius: 20px;
           display: flex;
           justify-content: space-between;
           align-items: center;
           gap: 15px;
+          cursor: pointer;
           // width: 100px;
 
           p{
