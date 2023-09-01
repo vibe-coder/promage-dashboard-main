@@ -11,11 +11,6 @@ import { styled, alpha } from '@mui/material/styles';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import "./SCSS/Bio-Down-Button.scss"
-import user from "../Images/ME.jpg"
-import { useState } from 'react';
-import PersonIcon from '@mui/icons-material/Person';
-import LogoutIcon from '@mui/icons-material/Logout';
-import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import Divider from '@mui/material/Divider';
 
 
