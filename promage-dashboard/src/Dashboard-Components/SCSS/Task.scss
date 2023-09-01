@@ -394,6 +394,9 @@ body{
         align-items: center;
         margin-bottom: 30px;
         justify-content: flex-end;
+        visibility: hidden;
+        position: absolute;
+        top: 0;
         
         img{
           height: 17px;
