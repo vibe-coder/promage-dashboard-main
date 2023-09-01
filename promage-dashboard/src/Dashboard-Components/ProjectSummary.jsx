@@ -84,6 +84,16 @@ function ProjectSummary() {
       setAnchorEl3(null);
     };
 
+       // Dropdown 4
+       const [anchorEl4, setAnchorEl4] = React.useState(null);
+       const open4 = Boolean(anchorEl4);
+       const handleClick4 = (event) => {
+         setAnchorEl4(event.currentTarget);
+       };
+       const handleClose4 = () => {
+         setAnchorEl4(null);
+       };
+
   return (
     
     <div className='project-summary-container'>
@@ -124,11 +134,15 @@ function ProjectSummary() {
                 className="styled-menu"
               >
                 <MenuItem onClick={handleClose} disableRipple>
-                  <p style={{margin: 0, fontSize: '1rem'}}>Tasks</p>
+                  <p style={{margin: 0, fontSize: '1rem'}}>Project</p>
                 </MenuItem>
                 <Divider />
                 <MenuItem onClick={handleClose} disableRipple>
-                  <p style={{margin: 0, fontSize: '1rem'}}>Duties</p>
+                  <p style={{margin: 0, fontSize: '1rem'}}>Task</p>
+                </MenuItem>
+                <Divider />
+                <MenuItem onClick={handleClose} disableRipple>
+                  <p style={{margin: 0, fontSize: '1rem'}}>Duty</p>
                 </MenuItem>
                 </StyledMenu>
               </>
@@ -150,6 +164,10 @@ function ProjectSummary() {
                 onClose={handleClose2}
                 className="styled-menu"
               >
+                <MenuItem onClick={handleClose2} disableRipple>
+                  <p style={{margin: 0, fontSize: '1rem'}}>Project Manager</p>
+                </MenuItem>
+                <Divider />
                 <MenuItem onClick={handleClose2} disableRipple>
                   <p style={{margin: 0, fontSize: '1rem'}}>Developer</p>
                 </MenuItem>
@@ -268,10 +286,36 @@ function ProjectSummary() {
         {/* Top */}
         <div className='top'>
           <h3>Overall Progress</h3>
-          <div>
-            <p>All</p>
-            <img src={arrowDown} alt='arrow down' />
-          </div>
+
+          <>
+            <div onClick={handleClick4}>
+              <p>All</p>
+              <img src={arrowDown} alt='arrow down' />
+            </div>
+          
+            <StyledMenu
+                id="demo-customized-menu"
+                MenuListProps={{
+                  'aria-labelledby': 'demo-customized-button',
+                }}
+                anchorEl={anchorEl4}
+                open={open4}
+                onClose={handleClose4}
+                className="styled-menu"
+              >
+                <MenuItem onClick={handleClose4} disableRipple>
+                  <p style={{margin: 0, fontSize: '1rem'}}>All</p>
+                </MenuItem>
+                <Divider />
+                <MenuItem onClick={handleClose4} disableRipple>
+                  <p style={{margin: 0, fontSize: '1rem'}}>New</p>
+                </MenuItem>
+                <Divider />
+                <MenuItem onClick={handleClose4} disableRipple>
+                  <p style={{margin: 0, fontSize: '1rem'}}>Old</p>
+                </MenuItem>
+            </StyledMenu>
+          </>
         </div>
 
         {/* Middle */}
