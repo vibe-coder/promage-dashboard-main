@@ -8,6 +8,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import "./SCSS/Bio-Down-Button.scss"
 import Divider from '@mui/material/Divider';
+import SummaryData from './ProjectSummaryData'
 
 
 const StyledMenu = styled((props) => (
@@ -51,7 +52,7 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-function ProjectSummary() {
+function ProjectSummary(prop) {
 
 
   // Dropdown 1
@@ -231,7 +232,21 @@ function ProjectSummary() {
               </thead>
 
               <tbody className='table-body-wrapper'>
-                <tr className='row-body'>
+                {
+                  SummaryData.map((data) => {
+                    return(
+                      <tr className='row-body' key={data.id}>
+                      <td className='body-item'><p>{data.name}</p></td>
+                      <td className='body-item'><p>{data.manager}</p></td>
+                      <td className='body-item'><p>{data.date}</p></td>
+                      <td className='body-item'><div className='status-bar'><p>{data.status}</p></div></td>
+                      <td className='body-item'><div className='progress-wrapper'><p>{data.progress}</p></div></td>
+                    </tr>
+                    )
+                  })
+                }
+
+                {/* <tr className='row-body'>
                   <td className='body-item'><p>Nelsa Web Development</p></td>
                   <td className='body-item'><p>Om prakash sao</p></td>
                   <td className='body-item'><p>May 25, 2023</p></td>
@@ -261,15 +276,7 @@ function ProjectSummary() {
                   <td className='body-item'><p>May 25, 2023</p></td>
                   <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
                   <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
-                </tr>
-
-                <tr className='row-body'>
-                  <td className='body-item'><p>Nelsa Web Development</p></td>
-                  <td className='body-item'><p>Om prakash sao</p></td>
-                  <td className='body-item'><p>May 25, 2023</p></td>
-                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
-                </tr>
+                </tr> */}
 
               </tbody> 
             </table>
