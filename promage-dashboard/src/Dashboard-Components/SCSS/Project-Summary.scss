@@ -160,17 +160,13 @@
                 .body-item:nth-child(4) .status-bar{
                   background-color: rgba($color: #1A932E, $alpha: .1);
                   height: 60%;
-                  width: 90%;
+                  // width: 90%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   border-radius: 40px;
                   color: #1A932E;
                 }
-              }
-
-              .row-body:nth-child(1){
-                // border-top: solid 1px transparent;
               }
             }
           }
@@ -438,7 +434,7 @@
                 .body-item:nth-child(4) .status-bar{
                   background-color: rgba($color: #1A932E, $alpha: .1);
                   height: 60%;
-                  width: 90%;
+                  // width: 90%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
@@ -703,20 +699,22 @@
                   border-bottom: solid .1rem transparent;
                 }
 
-                .body-item:nth-child(4) .status-bar{
-                  background-color: rgba($color: #1A932E, $alpha: .1);
-                  height: 60%;
-                  width: 100%;
-                  display: flex;
-                  align-items: center;
-                  justify-content: center;
-                  border-radius: 40px;
-                  color: #1A932E;
+                .body-item:nth-child(4){ 
+                  // background-color: red;
+                  width: auto;
+                  // width: 100px;
+                  .status-bar{
+                    background-color: rgba($color: #1A932E, $alpha: .1);
+                    height: 60%;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    // padding: 0 10px;
+                    border-radius: 40px;
+                    color: #1A932E;
+                  }
                 }
-              }
-
-              .row-body:nth-child(1){
-                // border-top: solid 1px transparent;
               }
             }
           }
