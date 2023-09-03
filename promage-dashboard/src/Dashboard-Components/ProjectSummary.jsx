@@ -236,12 +236,12 @@ function ProjectSummary(prop) {
                   SummaryData.map((data) => {
                     return(
                       <tr className='row-body' key={data.id}>
-                      <td className='body-item'><p>{data.name}</p></td>
-                      <td className='body-item'><p>{data.manager}</p></td>
-                      <td className='body-item'><p>{data.date}</p></td>
-                      <td className='body-item'><div className='status-bar'><p>{data.status}</p></div></td>
-                      <td className='body-item'><div className='progress-wrapper'><p>{data.progress}</p></div></td>
-                    </tr>
+                        <td className='body-item'><p>{data.name}</p></td>
+                        <td className='body-item'><p>{data.manager}</p></td>
+                        <td className='body-item'><p>{data.date}</p></td>
+                        <td className='body-item'><div className='status-bar'><p>{data.status}</p></div></td>
+                        <td className='body-item'><div className='progress-wrapper'><p>{data.progress}</p></div></td>
+                      </tr>
                     )
                   })
                 }
