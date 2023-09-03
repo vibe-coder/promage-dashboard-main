@@ -245,39 +245,6 @@ function ProjectSummary(prop) {
                     )
                   })
                 }
-
-                {/* <tr className='row-body'>
-                  <td className='body-item'><p>Nelsa Web Development</p></td>
-                  <td className='body-item'><p>Om prakash sao</p></td>
-                  <td className='body-item'><p>May 25, 2023</p></td>
-                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
-                </tr>
-
-                <tr className='row-body'>
-                  <td className='body-item'><p>Nelsa Web Development</p></td>
-                  <td className='body-item'><p>Om prakash sao</p></td>
-                  <td className='body-item'><p>May 25, 2023</p></td>
-                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
-                </tr>
-
-                <tr className='row-body'>
-                  <td className='body-item'><p>Nelsa Web Development</p></td>
-                  <td className='body-item'><p>Om prakash sao</p></td>
-                  <td className='body-item'><p>May 25, 2023</p></td>
-                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
-                </tr>
-
-                <tr className='row-body'>
-                  <td className='body-item'><p>Nelsa Web Development</p></td>
-                  <td className='body-item'><p>Om prakash sao</p></td>
-                  <td className='body-item'><p>May 25, 2023</p></td>
-                  <td className='body-item'><div className='status-bar'><p>Completed</p></div></td>
-                  <td className='body-item'><div className='progress-wrapper'><p>100%</p></div></td>
-                </tr> */}
-
               </tbody> 
             </table>
           </div>
