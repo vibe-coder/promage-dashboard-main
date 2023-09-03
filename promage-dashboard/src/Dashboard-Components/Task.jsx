@@ -7,6 +7,7 @@ import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import "./SCSS/Bio-Down-Button.scss"
 import Divider from '@mui/material/Divider';
+import TaskData from './TodayTaskData';
 
 
 
@@ -51,7 +52,7 @@ const StyledMenu = styled((props) => (
   },
 }));
 
-function Task() {
+function Task(prop) {
 
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
@@ -88,35 +89,17 @@ function Task() {
       
             <div className="task-items-wrapper">
               
-              <div className="task">
-                <input className='task-checkbox' type='checkbox' />
-                <p className='task-name'>Create a user flow of social application design</p>
-                <div className='task-status'>Approved</div>
-              </div>
-
-              <div className="task">
-                <input className='task-checkbox' type='checkbox' />
-                <p className='task-name'>Create a user flow of social application design</p>
-                <div className='task-status'>In review</div>
-              </div>
-
-              <div className="task">
-                <input className='task-checkbox' type='checkbox' />
-                <p className='task-name'>Landing page design for Fintech project of Singapore</p>
-                <div className='task-status'>In review</div>
-              </div>
-
-              <div className="task">
-                <input className='task-checkbox' type='checkbox' />
-                <p className='task-name'>Interactive prototype fro app screens of deltamine project</p>
-                <div className='task-status'>On going</div>
-              </div>
-
-              <div className="task">
-                <input className='task-checkbox' type='checkbox' />
-                <p className='task-name'>Interactive prototype fro app screens of deltamine project</p>
-                <div className='task-status'>Approved</div>
-              </div>
+              {
+                TaskData.map((data) => {
+                  return(
+                  <div className="task" key={data.id}>
+                    <input className='task-checkbox' type='checkbox' />
+                    <p className='task-name'>{data.task}</p>
+                    <div className='task-status'>{data.status}</div>
+                  </div>
+                  )
+                })
+              }
             </div>
           </div>
         </div>
