@@ -12,7 +12,6 @@ import usersIcon from "../Images/users-icon.svg"
 import templateIcon from "../Images/template-icon.svg"
 import settingIcon from "../Images/settings-icon.svg"
 import helpIcon from "../Images/help-icon.svg"
-// import arrowDown from "../Images/arrow-down.svg"
 
 
 
@@ -24,17 +23,22 @@ function Sidebar() {
           <img src={promageLogo} alt='promage logo' />
         </div>
 
-        <div className="new-project-button">
-          <img src={plusIcon} alt='plus icon' />
-          <p>Create new project</p>
+        <div className='new-project-button-wrapper'>
+          <div className="new-project-button">
+            <img src={plusIcon} alt='plus icon' />
+            <p>Create new project</p>
+          </div>
         </div>
+
 
         {/* Menu Wrapper */}
 
         <div className="menu-wrapper">
-          <div className="dashboard-button">
-            <img src={dashboardIcon} alt='plus icon' />
-            <p>Dashboard</p>
+          <div className='dashboard-button-wrapper'>
+            <div className="dashboard-button">
+              <img src={dashboardIcon} alt='plus icon' />
+              <p>Dashboard</p>
+            </div>
           </div>
 
           <div className='menu-item'>
@@ -80,8 +84,10 @@ function Sidebar() {
 
         {/* Help Button */}
 
-        <div className="help-button">
-          <img src={helpIcon} alt="help icon" />
+        <div className='help-button-wrapper'>
+          <div className="help-button">
+            <img src={helpIcon} alt="help icon" />
+          </div>
         </div>
       </div>
     </div>
