@@ -325,6 +325,22 @@
       }
   
       // **** Create New Project
+
+      .new-project-button-wrapper{
+        width: 170px;
+        height: 52px;
+        border-radius: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: solid 1px #000000;
+        transition: .3s ease-in-out;
+        margin-bottom: 40px;
+      }
+
+      .new-project-button-wrapper:hover{
+        border: solid 1px #E65F2B;
+      }
   
       .new-project-button{
         background-color: #fff;
@@ -335,8 +351,8 @@
         align-items: center;
         padding: 7px;
         gap: 10px;
-        margin-bottom: 40px;
         cursor: pointer;
+        transition: .2s ease-in-out;
   
         p{
           line-height: 15px;
@@ -348,6 +364,11 @@
           height: 30px;
         }
       }
+
+      // .new-project-button:hover{
+      //   background-color: #eaeaea;
+      //   border: solid 2px #E65F2B;
+      // }
   
       // **** Menu Wrapper
   
@@ -359,20 +380,37 @@
         gap: 15px;
         // margin-bottom: 90px;
 
+
+        .dashboard-button-wrapper{
+          width: 170px;
+          height: 52px;
+          border-radius: 48px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border: solid 1px #000000;
+          transition: .3s ease-in-out;
+        }
+
+        .dashboard-button-wrapper:hover{
+          border: solid 1px #E65F2B;
+        }
   
         .dashboard-button{
           background-color: #fff;
           width: 144px;
           height: 27px;
-          border-radius: 48px;
+          border-radius: 41px;
           display: flex;
           align-items: center;
           padding: 7px;
           gap: 10px;
           cursor: pointer;
+
           img{
             margin-left: 10px;
           }
+
           p{
             line-height: 15px;
             font-size: .95rem;
@@ -391,6 +429,7 @@
           height: 30px;
           transition: 0.2s ease-in-out;
           border: solid 0.8px rgba($color: #000000, $alpha: 1.0);
+          border-radius: 50px;
           width: 150px;
 
           img{
@@ -404,11 +443,28 @@
         }
 
         .menu-item:hover{
-          border: solid 0.8px rgba($color: #424242, $alpha: 1.0);
+          border: solid 0.8px rgba($color: #E65F2B, $alpha: 1.0);
+          border-radius: 50px;
+
         }
       }
   
       // ****** Help Button
+
+      .help-button-wrapper{
+        height: 45px;
+        width: 45px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 40px;
+        border: solid 1px #000000;
+        transition: 0.3s ease-in-out;
+      }
+
+      .help-button-wrapper:hover{
+        border: solid .1px #828282;
+      }
   
       .help-button{
         background-color: #E65F2B;
