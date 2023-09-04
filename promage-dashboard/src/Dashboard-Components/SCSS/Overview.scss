@@ -5,10 +5,6 @@
     padding: 20px;
     padding-top: 90px;
     
-    // p{
-    //   font-size: .9rem !important; 
-    // }
-    
     .overview-header{
       display: flex;
       align-items: center;
@@ -45,7 +41,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      // background-color: red;
       
       .container{
         background-color: rgba(255, 255, 255, .3);
@@ -71,11 +66,9 @@
         // * Figure Wrapper
     
         .figure-wrapper{
-          // background-color: red;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          // height: 68%;
           flex: 1;
           
           p{
@@ -102,7 +95,6 @@
           .description-wrapper{
             display: flex;
             gap: 5px;
-            // margin-top: 20px;
             align-items: center;
     
             p{
@@ -164,7 +156,6 @@
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      // background-color: red;
       
       .container{
         background-color: rgba(255, 255, 255, .3);
@@ -176,7 +167,6 @@
         height: 180px;
     
         .icon-1{
-          // background-color: YELLOW;
           height: 30%;
           margin-bottom: 10px;
         }
@@ -184,7 +174,6 @@
         // * Figure Wrapper
     
         .figure-wrapper{
-          // background-color: red;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -194,7 +183,6 @@
             font-weight: 400;
             color: #797979;
             margin: 0;
-            // margin-bottom: 20px;
             font-size: 1rem;
           }
     
@@ -215,7 +203,6 @@
           .description-wrapper{
             display: flex;
             gap: 5px;
-            // margin-top: 20px;
             align-items: center;
     
             p{
@@ -302,7 +289,6 @@
             font-weight: 400;
             color: #797979;
             margin: 0;
-            // margin-bottom: 20px;
             font-size: 1.1rem;
           }
     
@@ -323,7 +309,6 @@
           .description-wrapper{
             display: flex;
             gap: 5px;
-            // margin-top: 20px;
             align-items: center;
     
             p{

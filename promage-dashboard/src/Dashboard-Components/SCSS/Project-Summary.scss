@@ -7,19 +7,13 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    // margin-bottom: 90px;
     padding: 20px;
-    // background-color: green;
-
-
-
+    
     .summary-wrapper{
       background-color: rgba(255, 255, 255, .5);
       border-radius: 20px;
       padding: 20px;
-      // height: 410px;
-      // background-color: orange;
-
+      
       // ******************************* Project Caution Wrapper
 
       .caution-wrapper{
@@ -28,8 +22,7 @@
         align-items: center;
         margin-bottom: 20px;
         justify-content: flex-end;
-        // background-color: red;
-
+        
         img{
           height: 17px;
           mix-blend-mode: multiply;
@@ -52,9 +45,7 @@
           align-items: flex-end;
           margin-bottom: 20px;
           width: 340%;
-          // height: 50px;
-          // background-color: blue;
-  
+          
           .title-wrapper{
             display: flex;
             align-items: center;
@@ -100,20 +91,12 @@
             width: 340%;
             border-collapse: collapse;
             border-spacing: 0;
-            // background-color: red;
-
+            
             // *********************************** Table Header
-
-            // .table-header-wrapper{
-            //   text-align: left;
-            //   font-weight: 300;
-            //   border-bottom: solid 1px rgb(179, 179, 179);
-            // }
 
             .table-header-wrapper{ 
               text-align: left;
-              // background-color: red;
-              
+                            
               .header{
                 border-bottom: solid 1px rgb(179, 179, 179); 
 
@@ -137,8 +120,7 @@
             .table-body-wrapper{
   
               .row-body{
-                // background-color: red;
-                
+                                
                 .body-item:last-child{
                   text-align: right;
                 }
@@ -146,11 +128,6 @@
                 .body-item{
                   height: 50px;
                   border-bottom: solid .1rem transparent;
-                  // border-top: solid .08rem red;
-
-                  // p{
-                  //   font-size: .9rem;
-                  // }
 
                   p{
                     font-size: .9rem; 
@@ -160,7 +137,6 @@
                 .body-item:nth-child(4) .status-bar{
                   background-color: rgba($color: #1A932E, $alpha: .1);
                   height: 60%;
-                  // width: 90%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
@@ -182,7 +158,6 @@
 
     .overall-progress-container{
       background-color: rgba(255, 255, 255, .5);
-      // height: 360px;
       border-radius: 20px;
       padding: 20px;
       display: flex;
@@ -194,7 +169,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // background-color: yellow;
         height: 40px;
 
         h3{
@@ -223,7 +197,6 @@
 
       .middle{
         flex: 1;
-        // background-color: blue;
         display: flex;
         align-items: center;
 
@@ -234,7 +207,6 @@
 
       .bottom{
         margin-top: 10px;
-        // background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -245,7 +217,6 @@
         
 
         div{
-          // background-color: yellow;
           height: 100%;
 
           h3{
@@ -288,16 +259,12 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
-    // margin-bottom: 90px;
     padding: 20px;
-    // background-color: green;
 
     .summary-wrapper{
       background-color: rgba(255, 255, 255, .5);
       border-radius: 20px;
       padding: 20px;
-      // height: 410px;
-      // background-color: orange;
       
       // ******************************* Project Caution Wrapper
 
@@ -322,7 +289,6 @@
       // ******************************** Project Summary Selection
 
       .scroll-x{
-        // background-color: green;
         overflow: scroll;
 
         .summary-header{
@@ -331,14 +297,10 @@
           align-items: flex-end;
           margin-bottom: 20px;
           width: 200vw;
-          // border: solid 1px rgb(179, 179, 179);
           border-radius: 30px;
-          // padding: 0 5px;
           height: 50px;
   
           .title-wrapper{
-            // background-color: rgb(255, 255, 255);
-            // padding: 10px 17px;
             display: flex;
             align-items: center;
             border-radius: 20px;
@@ -374,30 +336,19 @@
         // ********************************** Project Summary Body
   
         .summary-body{
-          // overflow: hidden;
           width: 200vw;
-          // background-color: blue;
           
           .table{
             width: 200vw;
             border-collapse: collapse;
             border-spacing: 0;
-            // background-color: purple;
-
 
             // *********************************** Table Header
-
-            // .table-header-wrapper{
-            //   text-align: left;
-            //   font-weight: 300;
-            //   border-bottom: solid 1px rgb(179, 179, 179);
-            // }
 
             .table-header-wrapper{ 
               text-align: left;
               font-weight: 300;
-              border-bottom: solid 1px rgb(179, 179, 179);   
-              // background-color: green;          
+              border-bottom: solid 1px rgb(179, 179, 179);           
               .header{
                 .header-item{
                   height: 30px;
@@ -416,11 +367,7 @@
             // ************************************* Table Body
 
             .table-body-wrapper{
-              // border: solid;
-
-              .row-body{
-                // background-color: red;
-                
+              .row-body{                
                 .body-item:last-child{
                   text-align: right;
                 }
@@ -434,17 +381,12 @@
                 .body-item:nth-child(4) .status-bar{
                   background-color: rgba($color: #1A932E, $alpha: .1);
                   height: 60%;
-                  // width: 90%;
                   display: flex;
                   align-items: center;
                   justify-content: center;
                   border-radius: 40px;
                   color: #1A932E;
                 }
-              }
-
-              .row-body:nth-child(1){
-                // border-top: solid 1px transparent;
               }
             }
           }
@@ -471,16 +413,10 @@
       justify-content: space-between;
       gap: 5px;
 
-
-      .top, .middle, .bottom{
-        // background-color: green;
-      }
-
       .top{
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // background-color: yellow;
         height: 40px;
 
         h3{
@@ -505,7 +441,6 @@
 
       .middle{
         flex: 1;
-        // background-color: blue;
         display: flex;
         align-items: center;
 
@@ -515,14 +450,11 @@
       }
 
       .bottom{
-        // background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         div{
-          // background-color: yellow;
-
           h3{
             margin: 0;
             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -656,17 +588,10 @@
 
             // *********************************** Table Header
 
-            // .table-header-wrapper{
-            //   text-align: left;
-            //   font-weight: 300;
-            //   border-bottom: solid 1px rgb(179, 179, 179);
-            // }
-
             .table-header-wrapper{ 
               text-align: left;
               font-weight: 300;
-              border-bottom: solid 1px rgb(179, 179, 179);   
-              // background-color: green;          
+              border-bottom: solid 1px rgb(179, 179, 179);           
               .header{
                 .header-item{
                   height: 30px;
@@ -688,7 +613,6 @@
             .table-body-wrapper{
 
               .row-body{
-                // background-color: blue;
                 
                 .body-item:last-child{
                   text-align: right;
@@ -700,9 +624,8 @@
                 }
 
                 .body-item:nth-child(4){ 
-                  // background-color: red;
                   width: auto;
-                  // width: 100px;
+
                   .status-bar{
                     background-color: rgba($color: #1A932E, $alpha: .1);
                     height: 60%;
@@ -710,7 +633,6 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    // padding: 0 10px;
                     border-radius: 40px;
                     color: #1A932E;
                   }
@@ -743,7 +665,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        // background-color: yellow;
         height: 40px;
 
         h3{
@@ -773,7 +694,6 @@
 
       .middle{
         flex: 1;
-        // background-color: blue;
         display: flex;
         align-items: center;
 
@@ -783,13 +703,11 @@
       }
 
       .bottom{
-        // background-color: red;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
         div{
-          // background-color: yellow;
 
           h3{
             margin: 0;

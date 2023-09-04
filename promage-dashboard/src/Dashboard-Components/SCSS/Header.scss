@@ -26,57 +26,6 @@ body{
         font-weight: 500;
         margin: 0;
       }
-
-      // .bio-wrapper{
-      //   background-color: rgba(255, 255, 255, 1);
-      //   display: flex;
-      //   height: 30px;
-      //   width: 125px;
-      //   border-radius: 40px;
-      //   align-items: center;
-      //   padding: 5px;
-      //   justify-content: space-between;
-        
-      //   .picture{
-      //     height: 30px;
-      //     width: 30px;
-      //     border-radius: 20px;
-      //     margin-right: 7px;
-
-      //     .user-image{
-      //       width: 100%;
-      //       object-fit: cover;
-      //       object-position: center;
-      //       border-radius: 20px;
-      //     }
-      //   }
-
-      //   .name{
-      //     // background-color: red;
-      //     flex: 1;
-
-      //     h3,p{
-      //       margin: 0;
-      //     }
-      //     h3{
-      //       font-size: .75rem;
-           
-      //     }
-      //     p{
-      //       font-size: .48rem;
-      //     }
-      //   }
-
-      //   .arrow{
-      //     display: flex;
-      //     align-items: center;
-      //     justify-content: center;
-      //     height: 20px;
-      //     width: 20px;
-      //     border-radius: 20px;
-      //     margin: 0;
-      //   }
-      // }
     }
     
 
@@ -145,61 +94,10 @@ body{
       margin-bottom: 30px;
 
       .dashboard{
-        // font-size: 1.7rem;
         font-size: 1.8rem;
         font-weight: 500;
         margin: 0;
       }
-
-      // .bio-wrapper{
-      //   background-color: rgba(255, 255, 255, 1);
-      //   display: flex;
-      //   height: 35px;
-      //   width: 160px;
-      //   border-radius: 40px;
-      //   align-items: center;
-      //   padding: 5px;
-      //   justify-content: space-between;
-        
-      //   .picture{
-      //     height: 35px;
-      //     width: 35px;
-      //     border-radius: 20px;
-      //     margin-right: 7px;
-
-      //     .user-image{
-      //       width: 100%;
-      //       object-fit: cover;
-      //       object-position: center;
-      //       border-radius: 20px;
-      //     }
-      //   }
-
-      //   .name{
-      //     flex: 1;
-          
-      //     h3,p{
-      //       margin: 0;
-      //     }
-      //     h3{
-      //       font-size: .9rem;
-      //     }
-      //     p{
-      //       font-size: .65rem;
-      //       color: rgba($color: #292D32, $alpha: .6);
-      //     }
-      //   }
-
-      //   .arrow{
-      //     display: flex;
-      //     align-items: center;
-      //     justify-content: center;
-      //     height: 20px;
-      //     width: 20px;
-      //     border-radius: 20px;
-      //     margin: 0;
-      //   }
-      // }
     }
     
 
@@ -218,7 +116,6 @@ body{
 
         .search-input{
           height: 20px;
-          // width: 290px;
           flex: 1;
           border: none;
           border-radius: 30px;
@@ -231,7 +128,6 @@ body{
           background-color: rgb(255, 255, 255,);
           width: 40px;
           height: 40px;
-          // padding: 10px;
           border: none;
           border-radius: 30px;
           color: #fff;
@@ -261,7 +157,6 @@ body{
     justify-content: space-between;
     gap: 50px;
     margin-bottom: 30px;
-    // padding-top: 50px;
 
     // **************** Header Wrapper
 
@@ -276,60 +171,6 @@ body{
         margin: 0;
         font-size: 2rem;
       }
-
-      // .bio-wrapper{
-      //   background-color: rgba(255, 255, 255, 1);
-      //   display: flex;
-      //   height: 30px;
-      //   width: 160px;
-      //   border-radius: 40px;
-      //   align-items: center;
-      //   justify-content: space-between;
-      //   padding: 5px;
-        
-      //   .picture{
-      //     height: 30px;
-      //     width: 30px;
-      //     border-radius: 20px;
-      //     margin-right: 7px;
-
-      //     .user-image{
-      //       width: 100%;
-      //       object-fit: cover;
-      //       object-position: center;
-      //       border-radius: 20px;
-      //     }
-      //   }
-
-      //   .name{
-      //     // background-color: red;
-      //     flex: 1;
-          
-      //     h3,p{
-      //       margin: 0;
-      //     }
-      //     h3{
-      //       color: #292D32;
-      //       font-size: .9rem;
-      //       font-weight: 500;
-      //       // margin-bottom: 3px;
-      //     }
-      //     p{
-      //       font-size: .65rem;
-      //       color: rgba($color: #292D32, $alpha: .8);
-      //     }
-      //   }
-
-      //   .arrow{
-      //     display: flex;
-      //     align-items: center;
-      //     justify-content: center;
-      //     height: 20px;
-      //     width: 20px;
-      //     border-radius: 20px;
-      //     margin: 0;
-      //   }
-      // }
     }
 
     // ************************************ Search Wrapper
@@ -347,7 +188,6 @@ body{
 
         .search-input{
           height: 20px;
-          // width: 290px;
           flex: 1;
           border: none;
           border-radius: 30px;
@@ -361,7 +201,6 @@ body{
           background-color: rgb(255, 255, 255,);
           width: 40px;
           height: 40px;
-          // padding: 10px;
           border: none;
           border-radius: 30px;
           color: #fff;
